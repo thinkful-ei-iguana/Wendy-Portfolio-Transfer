@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+/* || General styles */
+body {
+  font-family: "Francois-One", sans-serif; 
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* || Nav styles */
+.nav-bar {
+  background: rgb(63, 59, 81);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+
+ul li {
+ 
+  border-bottom: 2px solid white;
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+ul li:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  color: white;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  padding: 10px 20px;
+}
+
+.toggle-menu {
+  width: 100%;
+  padding: 20px;
+  background: black;
+  text-align: right;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  display: none;
+  padding: 10px;
+}
+/* .menu-dropdown {
+  background: black;
+  color: white;
+  float: right;
+  margin-bottom: 0;
+  margin-right: 5px;
+  padding: 20px;
+  
+  width: 100%;
+} */
+
+/* || header styles */
+header {
+  background: url('images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+h2 {
+text-align: left;
+} 
+
+.bio {
+font-size: 16px;
+height: 500px;
+line-height: 1.5;
+text-align: left;
+width: 300px;
+}
+
+p span {
+display: inline-block;
+}
+
+/* || Project styles */
+.quiz-app {
+background: url('images/etymology-quiz.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+}
+
+.bookmarks-video {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+bottom: 0;
+left: 0;
+right: 0;
+top: 0;
+}
+
+footer {
+background: rgb(63, 59, 81);
+color: white;
+}
+
+@media (min-width: 320px) {
+  .logo {
+    font-size: 25px;
+  }
+  .menu-dropdown {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .toggle-menu {
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    display: none;
+  }
+  ul li {
+    display: block;
+    text-align: right;
+    margin-right: 15px;;
+  }
+  .active {
+    text-align: right;
+    display: block;
+  }
+}
+
+header {
+  padding: 12% 0;
+}
+
+section {
+  min-height: 100px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+.menu {
+  float: right;
+  padding-right: 10px;
+}
+
+.jump-to-portfolio{
+  height: 80px;
+}
+
+.white-space {
+  height: 100px;
+  background-color: white;
+}
+
+.edit {
+  font-size: 10px;
+}
