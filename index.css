@@ -4,16 +4,17 @@
 
 /* || General styles */
 body {
-  font-family: "Francois-One", sans-serif; 
+  font-family: "Francois-One", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* || Nav styles */
-.nav-bar {
+.navbar {
   background: rgb(63, 59, 81);
   height: 50px;
   position: fixed;
@@ -21,14 +22,15 @@ body {
   z-index: 20;
 }
 
-ul {
-  margin: 0 auto;
-  padding: 0;
-  width: 80%;
+.name {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px;
+  font-weight: bolder;
 }
 
-ul li {
- 
+/* ul li {
   border-bottom: 2px solid white;
   display: inline-block;
   list-style: none;
@@ -40,15 +42,7 @@ ul li {
 ul li:hover {
   color: white;
   text-decoration: none;
-}
-
-.logo {
-  color: white;
-  float: left;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  padding: 10px 20px;
-}
+} */
 
 .toggle-menu {
   width: 100%;
@@ -61,6 +55,30 @@ ul li:hover {
   display: none;
   padding: 10px;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 300px;
+}
+.content {
+  width: 280px;
+}
+.main-header {
+  text-align: center;
+}
+.sub-header {
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  padding: 20px;
+}
+/* .padding {
+  margin-left: auto;
+  margin-right: auto;
+} */
 /* .menu-dropdown {
   background: black;
   color: white;
@@ -74,7 +92,7 @@ ul li:hover {
 
 /* || header styles */
 header {
-  background: url('images/hero.jpg');
+  background: url("images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,74 +103,48 @@ header {
 }
 
 h2 {
-text-align: left;
-} 
+  text-align: left;
+}
 
 .bio {
-font-size: 16px;
-height: 500px;
-line-height: 1.5;
-text-align: left;
-width: 300px;
+  font-size: 16px;
+  height: 500px;
+  line-height: 1.5;
+  text-align: left;
+  width: 300px;
 }
 
 p span {
-display: inline-block;
+  display: inline-block;
 }
 
 /* || Project styles */
 .quiz-app {
-background: url('images/etymology-quiz.jpg');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 300px;
-margin-left: auto;
-margin-right: auto;
-width: 300px;
+  background: url("images/etymology-quiz.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
 .bookmarks-video {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-bottom: 0;
-left: 0;
-right: 0;
-top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
 }
-
-footer {
-background: rgb(63, 59, 81);
-color: white;
+video {
+  width: 300px;
 }
-
-@media (min-width: 320px) {
-  .logo {
-    font-size: 25px;
-  }
-  .menu-dropdown {
-    width: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .toggle-menu {
-    display: block;
-  }
-
-  ul {
-    width: 100%;
-    display: none;
-  }
-  ul li {
-    display: block;
-    text-align: right;
-    margin-right: 15px;;
-  }
-  .active {
-    text-align: right;
-    display: block;
-  }
+.contact {
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -161,28 +153,85 @@ header {
 
 section {
   min-height: 100px;
-  padding: 6% 0;
-  background-color: #bbb;
+  padding: 5% 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+footer {
+  background: rgb(63, 59, 81);
+  color: white;
+}
+
+/* 
 section:nth-child(even) {
-  background-color: #ddd;
-}
+  min-height: 100px;
+  padding: 5% 0;
+} */
 
-.menu {
+/* .menu {
   float: right;
   padding-right: 10px;
-}
-
-.jump-to-portfolio{
+} */
+/* 
+.jump-to-portfolio {
   height: 80px;
-}
+} */
 
-.white-space {
-  height: 100px;
-  background-color: white;
+/* 
+@media (min-width: 320px) {
+  .logo {
+    font-size: 25px;
+  }
+  .menu-dropdown {
+    width: 300px;
+  }
+} */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+  .content {
+    width: 700px;
+  }
+  video {
+    width: 700px;
+  }
+  header {
+    /* background: url("images/hero.jpg"); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
 }
+@media (min-width: 2560px) {
+  .container {
+    width: 1600px;
+  }
+  .content {
+    width: 1600px;
+  }
+  video {
+    width: 1600px;
+  }
+  header {
+    height: 700px;
+    float: right;
 
-.edit {
-  font-size: 10px;
+    width: 600px;
+  }
+  .navbar {
+    background: rgb(63, 59, 81);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+  .name {
+    font-size: larger;
+  }
 }
